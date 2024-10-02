@@ -64,8 +64,7 @@ class FixedSavingsCircleManager {
     const circle = new ethers.Contract(circleAddress, FixedSavingsCircleABI.abi, this.wallet);
     
     let amount = ethers.parseUnits(contributionAmount.toString(), 6); // Assuming 6 decimal places for USDC
-    const tx = await circle.contribute(amount);
-    await tx.wait();
+    const tx = await circle.
 
     console.log("Contribution successful", tx);
     return tx;

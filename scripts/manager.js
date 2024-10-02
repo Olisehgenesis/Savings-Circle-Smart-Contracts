@@ -19,8 +19,8 @@ async function main() {
 //   console.log('New Circular Savings Circle created at:', circularCircleAddress);
 
   // Contribute to the Fixed Savings Circle
-  await fixedManager.contribute(fixedCircleAddress, 1);
-  console.log('Contributed to Fixed Savings Circle');
+  data =await fixedManager.contribute(fixedCircleAddress, 1);
+  console.log('Contributed to Fixed Savings Circle', data);
 
 //   // Contribute to the Circular Savings Circle
 //   await circularManager.contribute(circularCircleAddress);

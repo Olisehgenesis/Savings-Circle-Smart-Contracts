@@ -20,7 +20,7 @@ contract FixedSavingsCircle is SavingsCircle {
         currentRound = 0;
     }
 
-    function _afterContribution(address user, uint256 amount) internal override {
+    function _afterContribution(address /* user */, uint256 /* amount */) internal override {
         if (currentRound < totalRounds) {
             currentRound++;
             emit RoundCompleted(currentRound);

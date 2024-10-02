@@ -1,5 +1,6 @@
 const ethers = require('ethers');
 const CircleFactoryABI = require('../artifacts/contracts/CircleFactory.sol/CircleFactory.json');
+const FixedSavingsCircleABI = require('../artifacts/contracts/FixedSavingsCircle.sol/FixedSavingsCircle.json');
 
 require("dotenv").config();
 

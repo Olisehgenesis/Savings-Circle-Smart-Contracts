@@ -23,7 +23,7 @@ contract CircularSavingsCircle is SavingsCircle {
         currentRound = 0;
     }
 
-    function _afterContribution(address user, uint256 amount) internal override {
+    function _afterContribution(address /* user */, uint256 /* amount */) internal override {
         checkAndDistribute();
     }
 
